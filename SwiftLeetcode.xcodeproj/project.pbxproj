@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9AEB99B2291D6ACC00A0B6FB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEB99B1291D6ACC00A0B6FB /* main.swift */; };
+		9AEB99BA291D6AE300A0B6FB /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 9AEB99B9291D6AE300A0B6FB /* Collections */; };
+		9AEB99BC291D6AE300A0B6FB /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 9AEB99BB291D6AE300A0B6FB /* DequeModule */; };
+		9AEB99BE291D6AE300A0B6FB /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 9AEB99BD291D6AE300A0B6FB /* OrderedCollections */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,7 @@
 /* Begin PBXFileReference section */
 		9AEB99AE291D6ACC00A0B6FB /* SwiftLeetcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftLeetcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AEB99B1291D6ACC00A0B6FB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9AEB99BF291D6B1700A0B6FB /* LeetcodePlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LeetcodePlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AEB99BA291D6AE300A0B6FB /* Collections in Frameworks */,
+				9AEB99BC291D6AE300A0B6FB /* DequeModule in Frameworks */,
+				9AEB99BE291D6AE300A0B6FB /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				9AEB99B1291D6ACC00A0B6FB /* main.swift */,
+				9AEB99BF291D6B1700A0B6FB /* LeetcodePlayground.playground */,
 			);
 			path = SwiftLeetcode;
 			sourceTree = "<group>";
@@ -78,6 +86,11 @@
 			dependencies = (
 			);
 			name = SwiftLeetcode;
+			packageProductDependencies = (
+				9AEB99B9291D6AE300A0B6FB /* Collections */,
+				9AEB99BB291D6AE300A0B6FB /* DequeModule */,
+				9AEB99BD291D6AE300A0B6FB /* OrderedCollections */,
+			);
 			productName = SwiftLeetcode;
 			productReference = 9AEB99AE291D6ACC00A0B6FB /* SwiftLeetcode */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 9AEB99A5291D6ACC00A0B6FB;
+			packageReferences = (
+				9AEB99B8291D6AE300A0B6FB /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = 9AEB99AF291D6ACC00A0B6FB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,6 +300,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9AEB99B8291D6AE300A0B6FB /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9AEB99B9291D6AE300A0B6FB /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AEB99B8291D6AE300A0B6FB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		9AEB99BB291D6AE300A0B6FB /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AEB99B8291D6AE300A0B6FB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		9AEB99BD291D6AE300A0B6FB /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9AEB99B8291D6AE300A0B6FB /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9AEB99A6291D6ACC00A0B6FB /* Project object */;
 }
